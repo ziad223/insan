@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+/* <!-- --------------------- header ----------------------------- --> */
+   
+header{
+    padding: 25px 10px;
+    height: 60px;
+}
+header h2{
+    color: rgb(2, 2, 71);
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+header .nav-links ul{
+    list-style: none;
+}
+header .nav-links ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+header .nav-links ul li a{
+    text-decoration: none;
+    font-weight: bold;
+}
+header .nav-links ul li a:hover{
+    border-bottom: 1px solid blue;
+}
+header .sign button{
+    padding: 5px 10px;
+    background-color: rgb(25, 25, 127);
+    color: #fff;
+}
+header .icon-bar i{
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/* <!-- --------------------- search ----------------------------- --> */
+.search{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: rgb(192, 192, 214);
+    height: 500px;
+}
+.search .content{
+    margin-top: 50px;
+}
+.search p{
+    font-size: 25px;
+    text-align: center; 
+}
+.search p span{
+    font-size: 30px;
+    color:rgb(25, 25, 127) ;
+}
+.search .inp{
+    margin-top: 50px;
+    position: relative;
+
+}
+.search .inp input{
+    width: 700px;
+    padding: 15px;
+    outline: none;
+
+}
+.search .inp input::placeholder{
+    color: rgb(19, 19, 109);
+    font-size: 15px;
+}
+.search .inp i{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font-size: 18px;
+    color: rgb(19, 19, 109);
+
+}
+
+/* <!-- --------------------- notic ----------------------------- -->  */
+.notic{
+    z-index: 1000;
+}
+.cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -100px;
+    z-index: 1000;
+    
+}
+.con{
+    box-shadow: 15px 20px 30px rgba(0, 0, 0, 0.1);
+    padding:  20px;
+    z-index: 2000;
+    background-color: #fff;
+}
+.con img{
+    width: 400px;
+    height: 400px;
+    margin: auto 0;
+    margin-left: 15px;
+
+}
+.con h2{
+    font-size: 18px;
+    color: rgb(134, 94, 20);
+}
+
+/* <!-- --------------------- date ----------------------------- -->  */
+
+.date{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    /* height: 400px; */
+
+}
+
+.date .left-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 130px;
+}
+.date .left-sec .img img{
+    width: 200px;
+    height: 200px;
+}
+.date .left-sec .img h3{
+    margin-bottom: 30px;
+    opacity: 0.5;
+}
+.date .dat{
+margin-left: 30px;
+} 
+.date .dat h3{
+    font-size: 25px;
+}
+.date .dat h4{
+    color: rgb(109, 79, 20);
+    margin-bottom: 50px;
+}
+.date .dat p{
+    font-size: 12px;
+}
+.right-sec h3{
+    margin-bottom: 10px;
+    opacity: 0.5;
+}
+.right-sec img{
+    width: 100px;
+    height: 100px;
+}
+.right-sec .inf{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-sec .inf .d{
+margin-left: 20px;
+}
+.right-sec .inf .d a{
+    text-decoration: none;
+
+    }
+    .right-sec .inf .d h5{
+        opacity: 0.5;
+    }
+
+/* <!-- --------------------- explore ----------------------------- -->  */
+
+.explore{
+    margin-top: 50px;
+    background-color: rgb(192, 192, 214);
+}
+.explore h2{
+    text-align: center;
+    margin: 30px 0;
+    color: rgb(19, 19, 109);
+    padding: 20px;
+}
+.explore .explore-part{
+    display: flex;
+    flex-wrap: wrap;
+}
+.explore .explore-part .ex{
+    background-color: #fff;
+    flex-basis: 32%;
+    padding: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.explore .explore-part .ex h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.explore .explore-part .ex img{
+   width: 100%;
+}
+ .ex button{
+    margin-top: 30px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid rgb(19, 19, 109);
+    padding: 10px ;
+    text-align: center;
+    margin-left: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+ }
+ .ex button:hover{
+    background-color: rgb(19, 19, 109);
+    color: #fff;
+ }
+ .ex .s{
+    height: 250px;
+ }
+
+/* <!-- --------------------- about ----------------------------- -->  */
+.about{
+    margin-top: 50px;
+}
+.about .abo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about h2{
+    text-align: center;
+    font-size: 23px;
+    color: rgb(19, 19, 109);
+    padding: 20px;
+}
+.abo .left h4{
+    color: rgb(19, 19, 109);
+    font-size: 23px;
+}
+.abo .left p{
+    margin-top: 30px;
+}
+.abo .left p a{
+    color: rgb(19, 19, 109);
+   
+}
+.abo .left  button,
+.abo .right  button{
+    margin-top: 20px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid rgb(19, 19, 109);
+    padding: 5px 10px ;
+    text-align: center;
+    margin-left: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.abo .left  button:hover,
+.abo .right  button:hover{
+    background-color: rgb(2, 2, 40);
+    color: #fff;
+}
+
+
+/* <!-- --------------------- footer ----------------------------- -->  */
+
+.footer{
+    margin-top: 50px;
+    background-color: rgb(27, 6, 64);
+    padding: 30px;
+}
+.footer .foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .foot .icons i{
+    margin-right: 13px;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+.footer .foot .email{
+    position: relative;
+
+}
+.footer .foot .email input{
+    padding: 15px;
+    width: 350px;
+}
+.footer .foot .email i{
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width : 480px){
+  
+/* <!-- --------------------- header ----------------------------- --> */
+header .nav-links .lay{
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+
+}
+    header .nav-links ul{
+        display: none;
+    }
+    header .nav-links ul li{
+        display: block;
+    }
+   
+    header .nav-links ul li a{
+        text-decoration: none;
+        font-weight: bold;
+    }
+    header .nav-links ul li a:hover{
+        border-bottom: 1px solid blue;
+    }
+    header .sign button{
+        display: none;
+    }
+    header .icon-bar i{
+        display: block;
+    }
+
+/* <!-- --------------------- search ----------------------------- --> */
+    
+    .search p{
+        font-size: 20px;
+        text-align: center; 
+    }
+    .search p span{
+        font-size: 18px;
+        color:rgb(25, 25, 127) ;
+    }
+    .search .inp{
+        margin-top: 50px;
+        position: relative;
+    
+    }
+    .search .inp input{
+        width: 300px;
+        padding: 15px;
+        outline: none;
+    }
+    .search .inp i{
+        right: 15px;
+    }
+    
+
+/* <!-- --------------------- notic ----------------------------- -->  */
+
+
+.cont{
+   flex-direction: column;
+    
+}
+.con{
+    box-shadow: 15px 20px 30px rgba(0, 0, 0, 0.1);
+    padding:  20px;
+    z-index: 2000;
+    background-color: #fff;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 15px;
+
+}
+.con img{
+    width: 100%;
+    height: 100%;
+    margin-left: 15px;
+    margin: 0;
+
+}
+.con h2{
+    font-size: 18px;
+    color: rgb(134, 94, 20);
+}
+
+    /* <!-- --------------------- date ----------------------------- -->  */
+
+.date{
+  flex-direction: column;
+
+}
+
+.date .left-sec{
+    margin-bottom: 30px;
+  flex-direction: column;
+
+}
+
+.date .left-sec .img h3{
+    margin-bottom: 30px;
+    opacity: 0.5;
+}
+.date .dat{
+margin-left: 10px;
+} 
+.date .dat h3{
+    font-size: 22px;
+}
+.date .dat h4{
+    margin-bottom: 20px;
+}
+.date .dat p{
+    font-size: 12px;
+}
+.right-sec h3{
+    margin-bottom: 20px;
+}
+.right-sec img{
+    width: 80px;
+    height: 80px;
+}
+.right-sec .inf{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-sec .inf .d{
+margin-left: 20px;
+}
+.right-sec .inf .d a{
+    font-size: 12px;
+    text-decoration: none;
+
+    }
+    .right-sec .inf .d h5{
+        font-size: 10px;
+        opacity: 0.5;
+    }
+
+/* <!-- --------------------- explore ----------------------------- -->  */
+
+
+
+.explore .explore-part .ex{
+    flex-basis: 95%;
+}
+
+ .ex button{
+    margin-left: 60px;
+    
+ }
+ .ex .s{
+    height: 150px;
+ }
+
+/* <!-- --------------------- about ----------------------------- -->  */
+
+.about .abo{
+    flex-direction: column;
+}
+
+
+.abo .left p{
+    margin-top: 20px;
+}
+.abo .left p a{
+    color: rgb(19, 19, 109);
+}
+.abo .left  button,
+.abo .right  button{
+
+    margin-bottom: 10px;
+}
+iframe{
+    width: 97%;
+}
+
+
+/* <!-- --------------------- footer ----------------------------- -->  */
+
+
+.footer .foot{
+    flex-direction: column;
+}
+.footer .foot .icons i{
+    margin-right: 18px;
+  margin-bottom: 20px;
+}
+.footer .foot .email{
+    position: relative;
+
+}
+.footer .foot .email input{
+    padding: 15px;
+    width: 350px;
+}
+.footer .foot .email i{
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    cursor: pointer;
+}
+
+
+}
